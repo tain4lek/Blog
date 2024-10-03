@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post | Projeto para Web com PHP</title>
-    <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+          href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">    
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <?php
+                <?php 
                     include 'includes/topo.php';
                 ?>
+
             </div>
         </div>
         <div class="row" style="min-height: 500px;">
