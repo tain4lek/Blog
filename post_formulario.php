@@ -3,7 +3,7 @@
     <head>
         <title>Post | Projeto para Web com PHP</title>
         <link rel="stylesheet" 
-            href="lib\bootstrap-4.2.1-dist\bootstrap-4.2.1-dist\css\bootstrap.min.css">
+            href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                     <?php include 'includes/menu.php'; ?>
                 </div>
-                <div class="col-md-12" style="padding-top: 50px;">
+                <div class="col-md-10" style="padding-top: 50px;">
                     <?php
                         require_once 'includes/funcoes.php';
                         require_once 'core/conexao_mysql.php';
@@ -47,9 +47,7 @@
                             $entidade = $retorno[0];
                         }
                     ?>
-                    <div class="card mb-3">
-                    <div class="card-header"><strong>POST</strong></div>
-                    <div class="card-body">
+                    <h2>Post</h2>
                         <form method="post" action="core/post_repositorio.php">
                             <input type="hidden" name="acao"
                                 value="<?php echo empty($id) ? 'insert' : 'update' ?>">
@@ -97,10 +95,6 @@
                             type="submit">Salvar</button>
                         </div>
                         </form>
-                    </div>
-                        
-                    </div>
-                    
                 </div>
             </div>
             <div class="row">
@@ -111,6 +105,6 @@
                 </div>
         </div>
     </div>
-    <script src="lib\bootstrap-4.2.1-dist\bootstrap-4.2.1-dist\js\bootstrap.min.js"></script>
+    <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     </body>
 </html>
