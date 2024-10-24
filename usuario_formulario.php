@@ -53,7 +53,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input class="form-control" type="text"
+                    <input class="form-control" type="email"
                     required id="email" name="email"
                     value="<?php echo $entidade['email'] ?? ''?>">
                 </div>
